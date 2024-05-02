@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#tabs {
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling if tabs overflow */
+    white-space: nowrap; /* Prevent tabs from wrapping */
+}
+
+.tab {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 5px; /* Add space between tabs */
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-close {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#tab-content {
+    height: calc(100vh - 50px);
+    overflow: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+#iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#tabs button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+#tabs button:hover {
+    background-color: #607b70; /* Change background color on hover */
+}
